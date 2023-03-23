@@ -31,3 +31,10 @@ function setGradient(params) {
 }
 
 container.addEventListener('click', setGradient)
+
+window.addEventListener('keydown', (e) => {
+  if (e.which == 13) {
+
+    setGradient()
+  }
+})
