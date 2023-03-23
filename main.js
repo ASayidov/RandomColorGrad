@@ -7,7 +7,7 @@ function getGradientColor(items) {
   let color = '#';
 
 
-  items.forEach((item, id) => {
+  items.forEach((id) => {
 
     if (id <= 5) {
       const random = Math.floor(Math.random() * items.length);
@@ -20,7 +20,7 @@ function getGradientColor(items) {
   return color
 }
 
-function setGradient(params) {
+function setGradient() {
   const col1 = getGradientColor(values);
   const col2 = getGradientColor(values);
   const randomDeg = Math.floor(Math.random() * 360);
